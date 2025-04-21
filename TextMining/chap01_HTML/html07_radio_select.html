@@ -1,0 +1,35 @@
+<!DOCTYPE html">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>radio(단일선택), select(선택상자), file(파일 선택)</title>
+</head>
+
+<body>
+   <form  method="get" action="http://www.naver.com">
+     <fieldset>
+         <legend>성별</legend>
+         <input type="radio" name="gender" value="남"> 남자
+         <input type="radio" name="gender" value="여" checked>여자         
+     </fieldset>
+     <fieldset>
+          <legend> 직업선택 </legend>
+          <select name ="job" size="1">
+             <option value="없음">### 직업을 선택하세요. ### </option>
+             <option value="학생">학생 </option>
+             <option value="회사원">회사원 </option>
+             <option value="기타">기타 </option>
+           </select>
+     </fieldset>
+     <fieldset>
+        <legend>파일 선택 </legend>
+        <input type="file" name = "filename" size ="15"/>  
+     </fieldset>
+     <fieldset>
+          <legend>데이터 전송</legend>
+          <input type="submit" value="전송"/> &nbsp;&nbsp;
+          <input type="reset" value="취소"/>        
+     </fieldset>  
+   </form>
+</body>
+</html>

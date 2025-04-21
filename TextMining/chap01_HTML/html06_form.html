@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> form 태그 </title>
+</head>
+<body>
+    <!-- form 태그
+      - 서버로 전송할 데이터의 양식을 작성하는 태그
+      - method : 데이터 전송 방식(get : url노출, post : 은닉)
+      - action :  대상이 되는 서버 지정
+     -->
+     
+  <fieldset> <!-- 제목을 갖는 테두리 -->
+      <legend> 아이디와 암호를 입력하세요. </legend>
+  <form method="get" action="http://www.naver.com">
+   <table border="1" align="center">
+     <tr>
+       <th> 아이디 </th>
+       <td> <input type="text" name="uid" id="uid"/> </td>
+     </tr>
+     <tr>
+       <th> 암호 </th>
+       <td> <input type="password" name="pwd" id="pwd"/> </td>
+     </tr>
+     <tr>
+       <th colspan="2">
+          <input type="submit" value="전송"/> &nbsp;
+          <input type="reset" value="취소"/> 
+       </th>
+     </tr>
+   </table>
+  </form>  
+ </fieldset>  
+</body>
+</html>
+
