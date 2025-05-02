@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title> table 태그 </title>
+ <style>
+   th{height : 50px; background : green; color : white}
+   td{text-align : center}
+   /* class 선택자 */
+   .contents{width : 100px; background : white; color : green; font-weight : bold;} 
+ </style>
+</head>
+<body>   
+  <div align="center">
+      <h1> 사원 목록 </h1>
+         <table border="1" width="400">
+            <tr>     
+             <th id="col1"> 사원명 </td>
+             <th id="col2"> 직책 </td>
+             <th id="col3"> 부서번호 </td>              
+            </tr>            
+            <tr> 
+              <td class='contents'> 홍길동 </td>  
+              <td> 사원 </td>              
+              <td> <a href="{{ url_for('deptInfo', dno='30')}}"> 30 </a> </td> 
+            </tr>             
+            <tr> 
+              <td class='contents'> 이순신 </td>  
+              <td> 관리자 </td>
+              <td> <a href="{{ url_for('deptInfo', dno='10')}}"> 10 </a> </td> 
+            </tr> 
+            <tr> 
+              <td class='contents'> 유관순 </td>  
+              <td> 연구원 </td>
+              <td> <a href="{{ url_for('deptInfo', dno='20')}}"> 20 </a> </td> 
+            </tr> 
+        </table>
+       </form>   
+ </div>
+</body>
+</html>
+

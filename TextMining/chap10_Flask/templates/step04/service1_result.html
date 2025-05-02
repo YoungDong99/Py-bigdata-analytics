@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>movie recommander info</title>
+    <style>
+        a{
+           text-decoration: none; /* a 태그 기본 서식 제거 */
+           color : #333;
+        }
+        /* 앵커 태그 위 마우스 오버시 */
+        a:hover{
+            text-decoration: none; 
+            color : blue;
+            font-family : 맑은 고딕;
+        }      
+    </style>    
+</head>
+<body>
+  <div align="center">
+     <h2> 추천 영화 정보(<font color='green'>{{genre}}</font>)</h2>
+     <table border="1" width = "600">
+       <tr>
+          <th>유사도 </th> <th> 영화 제목 </th>
+       </tr>
+		 {% if sim_title and genre %}		
+             {% for (sim, title) in sim_title %}
+                 <tr>
+                     <td align="center"> {{ sim }} </td>
+                     <td align="center"> {{ title }} </td> 
+                 </tr>
+             {% endfor %}
+          {% else %}
+          <tr>
+              <th colspan="2">
+                   <h3> 장르(genre)가 선택되지 않았거나, 추천 영화 정보가 없습니다.</h3>
+              </th>
+          </tr>
+          {% endif%}
+     </table>
+      <br>
+      <a href="/"> [시작화면] </a>  
+   </div>
+</body>
+</html>

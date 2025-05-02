@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 시작 페이지 </title>
+    <style>
+       a{
+          text-decoration: none; /* a 태그 기본 서식 제거 */
+          color : #333;
+       }
+       /* 앵커 태그 위 마우스 오버시 */
+       a:hover{
+           text-decoration: none; 
+           color : blue;
+           font-family : 맑은 고딕;
+       }
+     img{
+       width : 600px;
+       margin: 30px;       
+       border-radius : 500px;
+       /* 그림자 길이, 방향, 퍼짐, 색상*/   
+    }
+  </style>
+</head>
+<body>
+    <div align="center">
+       <h1> 영화 줄거리(review) </h1> 
+       <hr/>       
+        <img src="{{ url_for('static', filename='images/movie.jpg')}}" /> 
+       <hr/>
+       <a href='/review'> 영화 줄거리 보기</a>
+    </div>
+</body>
+</html>

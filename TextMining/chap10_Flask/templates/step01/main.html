@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> 시작 페이지(main) </title>
+    <style>
+       a{
+          text-decoration: none; /* a 태그 기본 서식 제거 */
+          color : #333;
+       }
+       /* 앵커 태그 위 마우스 오버시 */
+       a:hover{
+           text-decoration: none; 
+           color : blue;
+           font-family : 맑은 고딕;
+       }
+     /* 이미지 태그 스타일 */   
+     img{
+       width : 500px;
+       margin: 30px;       
+       border-radius : 500px;
+       box-shadow : 10px -10px 100px skyblue;
+       /* 그림자 길이, 방향, 퍼짐, 색상*/   
+    }
+  </style>
+</head>
+<body>
+    <!-- index.html 참고 -->
+    <div align="center">
+        <h1> AI </h1> <!-- 문서 제목 -->
+        <hr/> <!-- 선 그리기 --> 
+              
+        <!-- 이미지 태그 -->
+        <img src="{{ url_for('static', filename='images/ai.jpg') }}"/>       
+        <br>
+        <!-- 링크 추가 -->
+        <H3> <a href='/cont'> AI기술이란? </a> </H3> 
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

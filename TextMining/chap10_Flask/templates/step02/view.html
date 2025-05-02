@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title> page 제목 </title>
+  <style>
+     span,li{color : blue}
+     /* 이미지 태그 스타일 */   
+     img{
+       width : 300px; /* 이미지 폭 픽셀 */
+       margin: 30px;       
+       border-radius : 500px; /* 사각점 라운딩 */
+       box-shadow : 10px -10px 100px skyblue;
+       /* 그림자 길이, 방향, 퍼짐, 색상*/   
+    }
+  </style>  
+ </head>
+  <body>
+     <div align="center">
+         <hr/> <!-- 선 그리기 -->
+         <h1> view.html 페이지 </h1> 
+         <hr/> <!-- 선 그리기 -->   
+         <h3> 학생 이름 : <span> {{ name }} </span> </h3>            
+         <h3> 성적 </h3>     
+              {% for score in scores %}
+                  {% if score >= 70 %}         
+                      <li> {{ score }} </li>
+                  {% endif %}
+              {% endfor %} 
+         <br/>
+         <a href="/"> test 페이지 </a>
+     </div> 
+  </body>
+ </html>
+ 
+
+

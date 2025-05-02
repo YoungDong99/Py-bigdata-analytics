@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>model prediction</title>
+    <style>
+        .input-div{ vertical-align: middle; }
+        a{
+           text-decoration: none; /* a 태그 기본 서식 제거 */
+           color : #333;
+        }
+        /* 앵커 태그 위 마우스 오버시 */
+        a:hover{
+            text-decoration: none; 
+            color : blue;
+            font-family : 맑은 고딕;
+        }   
+        textarea{font-size: 16px;
+                vertical-align: middle;} 
+          
+        #result{text-align : center;
+                color : red;
+                font-size: 16px;
+        }
+    </style>    
+</head>
+<body>
+  <div align="center">
+     <h2> 문서분류기 예측결과</h2>
+     <table border="1" width = "600">
+       <tr>
+          <th> 원문 텍스트 </th> <th> 분류모델 결과  </th>
+       </tr>	  	             
+       <tr>            
+            <td align="center"> 
+               <textarea rows=3 cols="50">  {{ texts }}  </textarea>
+            </td> 
+            <td id = "result"> {{ y_pred_result }} </td>
+        </tr>     
+     </table>
+     <br/>
+     <a href="/"> [시작화면] </a>      
+   </div>
+</body>
+</html>

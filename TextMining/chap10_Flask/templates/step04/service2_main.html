@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> model choice </title>
+  <style type="text/css">
+     img{
+       margin: 50px 0 0 40px;
+       /* css3 추가 기능 */
+       border-radius : 500px;
+       box-shadow : 10px -10px 100px skyblue;
+       } 
+       /* 그림자 길이, 방향, 퍼짐, 색상*/ 
+        a{
+           text-decoration: none; /* a 태그 기본 서식 제거 */
+           color : #333;
+        }
+        /* 앵커 태그 위 마우스 오버시 */
+        a:hover{
+            text-decoration: none; 
+            color : blue;
+            font-family : 맑은 고딕;
+        }   
+        textarea{font-size: 16px;
+                vertical-align: middle;} 
+  </style>
+</head>
+<body>
+
+  <div align="center">
+  <form name="login" method="POST" action="/service2_result">
+    <h2> 문서 분류(Text classification)</h2>
+    
+    <h3> 테스트용 문서 </h3>    
+      <p> "I don't like chocolate ice cream." </p>
+      <p> "She isn't going to the party tonight." </p>
+      <p> "I love spending time with my family." </p>
+      <p> "They didn't finish their homework on time." </p>     
+
+     <textarea id="comments" name="texts" rows="3" cols="50">
+        "I don't like chocolate ice cream."
+     </textarea>     
+     <input type="submit" value="제출">
+    </form>
+   <br>
+   <a href='/'> [시작페이지] </a> 
+  </div>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+

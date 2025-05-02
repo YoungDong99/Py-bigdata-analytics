@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Index</title>
+    <style>        
+        th{background : green; color:white} 
+        li{color : blue}
+    </style>
+</head>
+<body>
+  <div align="center">
+      <h2> 영화 정보 </h2>
+      <table border="1" width="800">
+          <tr>
+              <th> 뉴스 제목 </th>
+              <th> 뉴스 내용 </th>
+          </tr>
+          
+          {% for t, n in zip(title, news) %}
+          <tr>
+              <td>{{ t }}</td>
+              <td>{{ n }}</td>
+          </tr>
+          {% endfor %}
+          
+      </table>      
+  </div>
+
+</body>
+</html>

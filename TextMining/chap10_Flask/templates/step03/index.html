@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title> table 태그 </title>
+ <style>
+   th{height : 50px; background : green; color : white}
+   td{text-align : center}
+   /* id 선택자 */
+   #col1{width : 320px}
+   #col2{width : 80px}
+   /* class 선택자 */
+   .contents{width : 100px; background : white; color : green; font-weight : bold;} 
+ </style>
+</head>
+<body>   
+  <div align="center">
+      <h1> 가전제품 쇼핑몰 </h1>
+      
+      <form method="get" action="/choice">
+          <table border="1" width="400">
+            <tr>     
+              <th id="col1"> 구매상품 </td>  <th id="col2"> 선택 </td> 
+            </tr>  
+                      
+            <tr> 
+             <td class='contents'> 냉장고 </td>  
+             <td>
+                <input type="radio" name="image" value="img01.jpg" checked/> 
+             </td> 
+            </tr>             
+           <tr>     
+             <td class='contents'> 세탁기 </td> 
+             <td>
+                <input type="radio" name="image" value="img02.jpg"/> 
+             </td> 
+           </tr>          
+           <tr>     
+             <td class='contents'> 전자레인지 </td>
+             <td>
+                <input type="radio" name="image" value="img03.jpg"/> 
+             </td> 
+          </tr>  
+          <tr>     
+             <td class='contents'> HDTV </td>
+             <td>
+                <input type="radio" name="image" value="img04.jpg"/> 
+             </td> 
+          </tr>  
+          <tr>
+            <td colspan="2" align="center">
+                 <input type="submit" value="전송"/> 
+            </td>
+          </tr>
+        </table>
+       </form>   
+ </div>
+</body>
+</html>
+

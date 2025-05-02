@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title> page 제목 </title>
+  <style>
+     /* 이미지 태그 스타일 */   
+     img{
+       width : 300px; /* 이미지 폭 픽셀 */
+       margin: 30px;       
+       border-radius : 500px; /* 사각점 라운딩 */
+       box-shadow : 10px -10px 100px skyblue;
+       /* 그림자 길이, 방향, 퍼짐, 색상*/   
+    }
+  </style>  
+ </head>
+ <body>
+    <div align="center">
+        <hr/> <!-- 선 그리기 -->
+        <h1> Flask Test </h1> <!-- 문서 제목 -->
+        <hr/> <!-- 선 그리기 -->              
+        <a href="/view"> <!-- url 요청 -->
+          <img src="{{ url_for('static', filename='images/test.png') }}"/>
+        </a>
+    </div> 
+ </body>
+</html>

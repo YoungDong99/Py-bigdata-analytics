@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>시작 페이지 </title>
+    <style type="text/css">
+       #title{color : green} /* 머리말 글자색 */
+       a{
+          text-decoration: none; /* a 태그 기본 서식 제거 */
+          color : #333;
+       }
+       /* 앵커 태그 위 마우스 오버시 */
+       a:hover{
+           text-decoration: none;
+           color : blue;
+           font-family : 맑은 고딕;
+       }
+       img{
+         margin: 40px;
+         /* css3 추가 기능 */
+         border-radius : 100px;
+         box-shadow : 10px 10px 100px skyblue;
+         /* 그림자 길이, 방향, 퍼짐, 색상*/   
+      }
+</style>
+</head>
+<body>
+
+    <div align="center">
+        <h1 id="title">과일 상점</h1>
+        <hr/>
+        <!-- 이미지 jinja 표현식 : {{url_for('static', filename='파일명')}} -->
+        <img src="{{ url_for('static', filename='images/과일상점.png') }}">
+        <hr/>
+        <h2> <a href='/goodsInfo'> 상품 구매 정보 </a> </h2>
+    </div>
+</body>
+</html>
+   
